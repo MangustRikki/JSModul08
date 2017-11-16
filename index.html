@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Modul 08</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="taskText">
+            <h3>Задача 1.</h3>
+            <p>Разработайте скрипт, который получает из input введенный url адрес. Адрес обрабатывается таким образом, что введенные имена приводятся к виду: Ввели</p>
+            <ul>
+                <li>http://primer.ua</li>
+                <li>http://www.primer.ua</li>
+                <li>https://primer.ua</li>
+            </ul>
+            <p>Получили: primer (удаляются протоколы и локальные зоны) Затем введенная строка обрабатывается по правилам:</p>
+            <ul>
+                <li>все символы о или О заменяются на 0 (нуль)</li>
+                <li>l заменяются на единицу (символ эль на единицу)</li>
+                <li>все символы «i» заменяются на 3</li>
+                <li>все буквы s заменяются на 5</li>
+                <li>к результирующей строке добавляется случайный набор из 4-х символов.</li>
+            </ul>
+            <p> Результат – выводится на экран. Для реализации использовать jQuery</p>
+        </div>
+        <input class="input" type="text" name="siteName" value="">
+        <button class="btn" type="button">Click me</button>
+        <div class="result"></div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="/js/js.js">
+    </script>
+</body>
+
+</html>
